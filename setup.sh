@@ -9,7 +9,7 @@ brew tap caskroom/versions
 brew tap caskroom/cask
 
 # Brew Apps
-# iTerm2, atom, open java, jq, awscli, gradle, maven, scala, spark, avro-tools, ammonite
+# iTerm2, atom, open java, jq, awscli, gradle, maven, scala, spark, avro-tools, ammonite, tmux, tree
 brew cask install iterm2
 
 # Other
