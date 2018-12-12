@@ -1,13 +1,19 @@
 #!/usr/bin/env bash
 
+# Setup
+## will be Zulu OpenJDK instead
+sudo rm -rf /Library/Internet\ Plug-Ins/JavaAppletPlugin.plugin 
+sudo rm -rf /Library/PreferencePanes/JavaControlPanel.prefPane 
+sudo rm -rf ~/Library/Application\ Support/Oracle/Java
+
 # Homebrew
+xcode-select --install
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 brew update
 brew doctor
 
 brew tap caskroom/versions
 brew tap caskroom/cask
-brew cask --caskroom=/Applications
 
 # utils
 brew install bash-completion
@@ -20,16 +26,18 @@ brew install zinc
 brew install awscli
 brew install gpg
 
-# Apps
+# tools
 brew cask install caskroom/versions/zulu8
-brew install scala
+brew install scala@2.11
 brew install apache-spark
+brew install apache-spark@2.3.2
+# *verify active versions*
 
 brew cask install iterm2
 brew cask install atom
 brew install avro-tools
 
-# MacOS
+# MacApps
 brew cask install dropbox
 brew cask install 1password
 brew cask install google-chrome
@@ -46,11 +54,12 @@ brew cask install slack
 brew cask install firefox
 brew cask install disk-inventory-x
 brew cask install evernote
+#brew cask install mactex
 
+brew cleanup
 
-brew cask cleanup
-
-# Manual
-# Anaconda: https://www.anaconda.com/download/
-# todoist: https://itunes.apple.com/us/app/todoist-organize-your-life/id585829637?mt=12
-# gpg --import-ownertrust ownertrust-gpg.txt
+echo 'Manual Installs:'
+echo 'Anaconda: https://www.anaconda.com/download/'
+echo 'todoist: https://itunes.apple.com/us/app/todoist-organize-your-life/id585829637?mt=12'
+echo ''
+echo 'done!'
