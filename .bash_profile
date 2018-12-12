@@ -16,3 +16,7 @@ alias ll='ls -l'
 
 alias prettyjson='python -m json.tool'
 alias aws='python -m awscli'
+
+
+export JAVA_HOME="$(/usr/libexec/java_home -v 1.8)"
+export GPG_TTY=$(tty)
