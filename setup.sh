@@ -2,8 +2,8 @@
 
 # Setup
 ## will be Zulu OpenJDK instead
-sudo rm -rf /Library/Internet\ Plug-Ins/JavaAppletPlugin.plugin 
-sudo rm -rf /Library/PreferencePanes/JavaControlPanel.prefPane 
+sudo rm -rf /Library/Internet\ Plug-Ins/JavaAppletPlugin.plugin
+sudo rm -rf /Library/PreferencePanes/JavaControlPanel.prefPane
 sudo rm -rf ~/Library/Application\ Support/Oracle/Java
 
 # Homebrew
@@ -33,7 +33,6 @@ brew install pandoc
 brew install tmux
 brew install tree
 brew install zinc
-brew install awscli
 brew install gpg
 brew install avro-tools
 
@@ -63,3 +62,5 @@ echo 'Anaconda: https://www.anaconda.com/download/'
 echo 'todoist: https://itunes.apple.com/us/app/todoist-organize-your-life/id585829637?mt=12'
 echo ''
 echo 'done!'
+
+pip install awscli
