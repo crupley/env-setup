@@ -15,6 +15,16 @@ brew doctor
 brew tap caskroom/versions
 brew tap caskroom/cask
 
+# tools
+brew cask install caskroom/versions/zulu8
+brew install scala@2.11
+brew install apache-spark
+brew install apache-spark@2.3.2
+# *verify active versions*
+
+brew cask install iterm2
+brew cask install atom
+
 # utils
 brew install bash-completion
 brew install jq
@@ -25,21 +35,11 @@ brew install tree
 brew install zinc
 brew install awscli
 brew install gpg
-
-# tools
-brew cask install caskroom/versions/zulu8
-brew install scala@2.11
-brew install apache-spark
-brew install apache-spark@2.3.2
-# *verify active versions*
-
-brew cask install iterm2
-brew cask install atom
 brew install avro-tools
 
 # MacApps
 brew cask install dropbox
-brew cask install 1password
+brew cask install 1password6
 brew cask install google-chrome
 brew cask install google-backup-and-sync
 brew cask install google-hangouts
