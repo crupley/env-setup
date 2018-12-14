@@ -53,6 +53,8 @@ brew cask install slack
 brew cask install firefox
 brew cask install disk-inventory-x
 brew cask install evernote
+brew cask install anaconda
+brew cask install sourcetree
 #brew cask install mactex
 
 brew cleanup
